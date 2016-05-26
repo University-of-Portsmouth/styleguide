@@ -1,0 +1,29 @@
+// Button
+//
+// Your standard button suitable for clicking.
+//
+// Markup: button.html
+//
+// :hover    - Highlights when hovering.
+// :disabled - Dims the button when disabled.
+// .primary  - Indicates button is the primary action.
+// .smaller  - A little bit smaller now.
+//
+// Styleguide: button
+.button {
+  border-radius: 0;
+  border: 0;
+
+  &.primary {
+    color: blue;
+  }
+  &.smaller {
+    font-size: .5em;
+  }
+  &:hover {
+    opacity: .5;
+  }
+  &:disabled {
+    color: grey;
+  }
+}
