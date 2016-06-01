@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "5.8.0"
+
+sudo: false
+
+install:
+  - travis_retry npm install
+
+script:
+  - npm start
