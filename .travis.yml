@@ -5,10 +5,10 @@ sudo: false
 install:
 - travis_retry npm install
 script:
-- npm start
+- npm run build
 branches:
  only:
-   - master
+   - mastergit
 deploy:
   provider: s3
   access_key_id: AKIAJBFLHTL5DRRZ6SOQ

@@ -52,5 +52,8 @@ gulp.task('serve', function() {
   gulp.watch(options.styleguide.destination + '*.html').on('change', browserSync.reload);
 });
 
-// when running `gulp`
-gulp.task('default', ['sass', 'styleguide', 'serve']);
+// when running `gulp build` for a static build
+gulp.task('build', ['sass', 'styleguide']);
+
+// when running `gulp` to build, watch and re-build
+gulp.task('default', ['build', 'serve']);
