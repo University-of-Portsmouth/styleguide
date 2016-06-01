@@ -6,6 +6,9 @@ install:
 - travis_retry npm install
 script:
 - npm start
+branches:
+ only:
+   - master
 deploy:
   provider: s3
   access_key_id: AKIAJBFLHTL5DRRZ6SOQ
