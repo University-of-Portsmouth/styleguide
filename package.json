@@ -9,6 +9,7 @@
   "scripts": {
     "start": "gulp"
   },
+  "engines" : { "node" : ">=5.0.0" },
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
