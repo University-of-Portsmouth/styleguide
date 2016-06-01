@@ -53,4 +53,4 @@ gulp.task('serve', function() {
 });
 
 // when running `gulp`
-gulp.task('default', ['sass', 'styleguide', 'serve'])
+gulp.task('default', ['sass', 'styleguide', 'serve']);
