@@ -7,22 +7,40 @@
 // :hover    - Highlights when hovering.
 // :disabled - Dims the button when disabled.
 // .primary  - Indicates button is the primary action.
+// .success  - Indicates button is the success action.
+// .fail     - Indicates button is the fail action.
 // .smaller  - A little bit smaller now.
 //
 // Styleguide: button
 .button {
   border-radius: 0;
   border: 0;
+  padding: 1em;
 
   &.primary {
-    color: blue;
+    background: #59379e;
+    color: white;
   }
+
+  &.success {
+    background: green;
+    color: white;
+  }
+
+  &.fail {
+    background: red;
+    color: white;
+  }
+
   &.smaller {
-    font-size: .5em;
+    font-size: .85em;
   }
+
   &:hover {
-    opacity: .5;
+    opacity: .95;
+    cursor: pointer;
   }
+
   &:disabled {
     color: grey;
   }
