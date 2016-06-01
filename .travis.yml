@@ -14,7 +14,8 @@ deploy:
   bucket: port.whealmedia.com
   local-dir: styleguide
   upload-dir: styleguide
-  acl: ''
+  acl: 'public'
+  region: eu-west-1
   on:
     repo: University-of-Portsmouth/styleguide
     branch: deployment
