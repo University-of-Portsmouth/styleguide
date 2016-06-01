@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
 var kss = require('kss');
+var browserSync = require('browser-sync').create();
 
 var options = {
   autoprefixer: {
@@ -24,11 +25,6 @@ var options = {
   }
 };
 
-// generates the styleguide
-gulp.task('styleguide', function() {
-  return kss(options.styleguide);
-});
-
 // converts sass into final stylesheet file
 gulp.task('sass', function () {
   return gulp
@@ -37,8 +33,24 @@ gulp.task('sass', function () {
     .pipe(sass(options.sass).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(autoprefixer(options.autoprefixer))
-    .pipe(gulp.dest(options.styleguide.destination + 'css'));
+    .pipe(gulp.dest(options.styleguide.destination + 'css'))
+    .pipe(browserSync.stream());
+});
+
+// generates the styleguide
+gulp.task('styleguide', function() {
+  return kss(options.styleguide);
+});
+
+// serve up using browsersync
+gulp.task('serve', function() {
+  browserSync.init({ server: options.styleguide.destination });
+
+  // watch files and build/reload where needed
+  gulp.watch(options.styleguide.source + '**/*.scss', ['sass', 'styleguide']);
+  gulp.watch(options.styleguide.source + '**/*', ['styleguide']);
+  gulp.watch(options.styleguide.destination + '*.html').on('change', browserSync.reload);
 });
 
 // when running `gulp`
-gulp.task('default', ['sass', 'styleguide']);
+gulp.task('default', ['sass', 'styleguide', 'serve'])
