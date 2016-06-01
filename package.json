@@ -1,7 +1,11 @@
 {
   "name": "styleguide",
   "version": "0.0.1",
-  "description": "",
+  "description": "A styleguide for the University of Portsmouth",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/University-of-Portsmouth/styleguide.git"
+  },
   "scripts": {
     "start": "gulp"
   },
