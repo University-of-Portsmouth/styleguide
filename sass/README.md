@@ -1,6 +1,6 @@
 # Overview
 
-Welcome to the University of Portsmouth living styleguide.
+Welcome to the University of Portsmouth living styleguide. You can read more about living styleguides and pattern libraries [here](https://speakerdeck.com/thoughtmerchant/unifying-agile-and-ux-with-live-style-guides) and [here](https://24ways.org/2011/front-end-style-guides/).
 
 Many services within the University are currently using [Bootstrap](https://github.com/twbs/bootstrap) and therefore this styleguide is built on top of it.
 
@@ -10,7 +10,7 @@ This styleguide has been generated with [KSS](https://github.com/kss-node/kss-no
 
 To get started please select a component from the sidebar.
 
-*TBC - Bower?*
+*TBC*
 
 ## How to contribute
 

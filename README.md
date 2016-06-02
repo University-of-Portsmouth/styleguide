@@ -1,12 +1,11 @@
 # University of Portsmouth Styleguide
 
-This is the University of Portsmouth's living styleguide to be used for internal University projects. It contains CSS and sample HTML and will be used as the basis for future projects.
+The sass files are documented with KSS and are viewable [here](http://port.whealmedia.com). The documentation is automatically generated from the master branch by [Travis](http://tavisci.org).
 
 ## Table of contents
 
 - [Overview](#overview)
 - [Bugs](#bugs)
-- [Documentation](#documentation)
 - [Copyright and license](#copyright-and-license)
 
 ## Overview
@@ -33,10 +32,6 @@ This repository contains all the sass files and associated documentation.
 ## Found a Bug?
 
 Please raise a GitHub issue for this repository.
-
-## Documentation
-
-The sass files are documented with KSS and are viewable [here](http://port.whealmedia.com). The documentation is automatically generated from the master branch by [Travis](http://tavisci.org).
  
 ## Copyright and license
 
