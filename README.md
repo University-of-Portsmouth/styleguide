@@ -1,38 +1,31 @@
 # University of Portsmouth Styleguide
 
-The sass files are documented with KSS and are viewable [here](http://port.whealmedia.com). The documentation is automatically generated from the master branch by [Travis](http://tavisci.org).
+This styleguide is for use in University of Portsmouth services. It can be found living at http://port.whealmedia.com and automatically updates when this repo changes.
 
-## Table of contents
+The styleguide uses [Sass](http://sass-lang.com/) and is based on [Bootstrap](https://github.com/twbs/bootstrap)'s API. It is documented with [KSS](https://github.com/kss-node/kss-node). The styleguide is deployed automatically from the master branch by [Travis CI](http://travisci.org).
 
-- [Overview](#overview)
-- [Bugs](#bugs)
-- [Copyright and license](#copyright-and-license)
+## Why?
 
-## Overview
+One problem the University of Portsmouth has found is the lack of consistency across their services. Having a styleguide will help towards solving this problem.
 
-This styleguide is written in sass and is built on [Bootstrap](https://github.com/twbs/bootstrap). It is documented with [KSS](https://github.com/kss-node/kss-node).
+This is also the reason why the styleguide is built on [Bootstrap](https://github.com/twbs/bootstrap) as this is used extensively across the University services already
 
-### Quick start
+## Usage
 
-*This section needs completing*
+Instructions of usage of this styleguide can be found at http://port.whealmedia.com.
 
-* *Download the latest release*
-* *Clone the repo*
-* *Install with Bower*
-
-### Installation
-1. install Node >=5.0.0 and npm
-2. install dependencies: `npm install`
-3. build sass and styleguide: `npm start`
-
-### What's included
-
-This repository contains all the sass files and associated documentation.
-
-## Found a Bug?
+## Bugs, Issues, Feedback, New features
 
 Please raise a GitHub issue for this repository.
- 
+
+## Developing the Styleguide
+
+### Installation
+
+1. Install Node >=5.0.0 and npm
+2. Install dependencies: `npm install`
+3. Build sass and styleguide: `npm start`
+
 ## Copyright and license
 
 Bootstrap is licensed under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
