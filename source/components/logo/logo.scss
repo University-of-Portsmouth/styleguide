@@ -10,21 +10,20 @@
 // Styleguide: logo
 
 .logo {
-  height: 100px;
   width: 300px;
+  height: 100px;
 
   background: center no-repeat;
-
-  background-image: url('../kss-assets/logo/uop-logo.png'); // fallback to png
-  background-image: url('../kss-assets/logo/uop-logo.svg'), none;
+  background-image: url("../kss-assets/logo/uop-logo.png"); // fallback to png
+  background-image: url("../kss-assets/logo/uop-logo.svg"), none;
 
   &.white {
-    background-image: url('../kss-assets/logo/uop-logo--white.png'); // fallback to png
-    background-image: url('../kss-assets/logo/uop-logo--white.svg'), none;
+    background-image: url("../kss-assets/logo/uop-logo--white.png"); // fallback to png
+    background-image: url("../kss-assets/logo/uop-logo--white.svg"), none;
   }
 
   &.black {
-    background-image: url('../kss-assets/logo/uop-logo--black.png'); // fallback to png
-    background-image: url('../kss-assets/logo/uop-logo--black.svg'), none;
+    background-image: url("../kss-assets/logo/uop-logo--black.png"); // fallback to png
+    background-image: url("../kss-assets/logo/uop-logo--black.svg"), none;
   }
 }

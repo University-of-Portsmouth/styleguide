@@ -50,6 +50,7 @@ linters:
     enabled: true
     ignore_consecutive:
       - background
+      - background-image
 
   ElsePlacement:
     enabled: true
