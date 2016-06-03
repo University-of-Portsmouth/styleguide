@@ -12,18 +12,17 @@
   <link rel="stylesheet" href="kss-assets/prism.css">
   {{{styles}}}
 </head>
-<body id="kss-node" {{#if homepage}}class="kss-node--home"{{/if}}>
+<body id="kss-node">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">{{options.title}}</h1>
+  </header>
   <div class="kss-sidebar kss-style">
-    <img class="kss-logo" src="kss-assets/uop-logo.svg" alt="University of Portsmouth's Logo" />
-    <header class="kss-header">
-      <h1 class="kss-doc-title">{{options.title}}</h1>
-    </header>
     <nav class="kss-nav">
       <ul class="kss-nav__menu">
         <li class="kss-nav__menu-item">
           <a class="kss-nav__menu-link" href="./">
             <span class="kss-nav__ref">0</span
-            ><span class="kss-nav__name">Home</span>
+            ><span class="kss-nav__name">Overview</span>
           </a>
         </li>
       {{#each menu}}

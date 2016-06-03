@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------------------
 //   Variables - Colors, Fonts, etc.
 // ------------------------------------------------------------------------------
-$uop-purple: #59379e;
+$uop-purple: #470a68;
 
 $kss-colors-background: #fff;
 
@@ -13,15 +13,13 @@ $kss-colors-link: $uop-purple;
 $kss-colors-link-hover: lighten($kss-colors-link, 20%);
 $kss-colors-link-active: lighten($kss-colors-link, 30%);
 
-$kss-font-body: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+$kss-font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $kss-font-code: Menlo, 'Ubuntu Mono', 'Lucida Console', 'Courier New', Courier, monospace;
 
 $kss-font-size: 16px;
 $kss-vertical-rhythm: $kss-font-size * 1.5;
 
-// ------------------------------------------------------------------------------
 // Wrap all of this builder's base HTML styling inside a .kss-style selector.
-// ------------------------------------------------------------------------------
 
 .kss-style {
   color: $kss-colors-foreground;
@@ -155,14 +153,57 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   }
 }
 
-// ------------------------------------------------------------------------------
 // Layout and page background
-// ------------------------------------------------------------------------------
 
 #kss-node {
   margin: 0;
-  padding: 20px;
   background: #fff;
+
+  .kss-header {
+    padding: 20px;
+
+    color: white;
+
+    background: desaturate($uop-purple, 30%);
+
+    background-position: 1em center;
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-image: url('logo/uop-logo--white.png');
+    background-image: url('logo/uop-logo--white.svg'), none;
+
+    @media screen and (min-width: 769px) {
+      padding: 40px 20px;
+      background-size: 15% auto;
+    }
+  }
+
+  .kss-doc-title {
+    line-height: 1em;
+
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 30%;
+
+    @media screen and (min-width: 769px) {
+      padding-left: 21.5%;
+
+      text-align: initial;
+    }
+  }
+
+  .kss-home {
+    padding: 2em 20px;
+    background: $uop-purple;
+  }
+
+  .kss-home h1 {
+    margin: 0;
+
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+  }
 
   @media screen and (min-width: 769px) {
     padding: 0;
@@ -177,8 +218,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   }
 
   .kss-main {
-    width: 100%;
-    margin: 0 auto;
+    padding: 0 1em;
 
     @media screen and (min-width: 769px) {
       width: 80%;
@@ -187,34 +227,21 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     }
   }
 
-  .kss-logo {
-    margin-top: 1em;
-  }
-
   .kss-sidebar {
-    border-bottom:1px solid #ddd;
+    background: rgba(0,0,0,0.05);
 
     @media screen and (min-width: 769px) {
       position: fixed;
+      top: 0;
+      padding-top: 120px;
       width: 20%;
       height: 100%;
       overflow: auto;
-      padding: 0 10px 0 20px;
       border-bottom: 0;
-      background: rgba(0,0,0,0.05);
     }
   }
-}
 
-// Home page
-
-#kss-node.kss-node--home {}
-
-// ------------------------------------------------------------------------------
-// Sidebar-area components
-// ------------------------------------------------------------------------------
-
-#kss-node {
+  // Sidebar-area components
 
   .kss-doc-title {
     margin: 0;
@@ -224,49 +251,33 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     }
   }
 
-  .kss-header,
-  .kss-nav {
-    @media screen and (min-width: 769px) {
-      margin-top: 2em;
-    }
-  }
-
   .kss-nav__menu {
-    margin-top: ($kss-vertical-rhythm/2);
-    margin-bottom: ($kss-vertical-rhythm/2);
+    margin: 0;
+    margin-bottom: ($kss-vertical-rhythm);
     padding: 0;
     list-style-type: none;
   }
 
   .kss-nav__menu-item {
     display: inline-block;
-    padding-right: $kss-vertical-rhythm;
 
     @media screen and (min-width: 769px) {
       display: list-item;
-      padding-right: 0;
     }
   }
 
   .kss-nav__menu-link {
     position: relative;
-    display: inline-block;
+    display: block;
+    padding: .75em 1em;
 
-    &:before {
-      @media screen and (min-width: 769px) {
-        content: ' ';
-        position: absolute;
-        left: -20px;
-        width: 0;
-        height: 100%;
-        background-color: rgba(#000, 0);
-      }
-    }
+    font-size: 1.25em;
 
-    &.is-in-viewport:before {
-      background-color: #000;
-      width: 5px;
-      transition: background-color .4s, width .6s;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+
+    @media screen and (min-width: 769px) {
+      border-right: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
     }
   }
 
@@ -296,8 +307,8 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   }
 
   .kss-nav__ref {
-    color: #333;
-    font-weight: bold;
+    color: #ABABAB;
+    margin-right: .25em;
 
     &:after {
       content: ' ';
@@ -306,13 +317,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   .kss-nav__ref-child {
     font-weight: normal;
   }
-}
 
-// ------------------------------------------------------------------------------
-// Content-area components
-// ------------------------------------------------------------------------------
-
-#kss-node {
+  // ------------------------------------------------------------------------------
+  // Content-area components
+  // ------------------------------------------------------------------------------
 
   .kss-section {
     max-width: 48em;

@@ -17,7 +17,7 @@ var options = {
   },
   styleguide: {
     source: './sass/',
-    title: 'University of Portsmouth Living Styleguide',
+    title: 'Living Styleguide',
     homepage: 'README.md',
     destination: './styleguide/',
     builder: './builder/',
@@ -42,18 +42,31 @@ gulp.task('styleguide', function() {
   return kss(options.styleguide);
 });
 
+// converts sass for the styleguide
+gulp.task('styleguide-sass', function () {
+  return gulp
+    .src(options.styleguide.builder + 'kss-assets/kss.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass(options.sass).on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer(options.autoprefixer))
+    .pipe(gulp.dest(options.styleguide.builder  + 'kss-assets'))
+    .pipe(browserSync.stream());
+});
+
 // serve up using browsersync
 gulp.task('serve', function() {
   browserSync.init({ server: options.styleguide.destination });
 
   // watch files and build/reload where needed
   gulp.watch(options.styleguide.source + '**/*.scss', ['sass', 'styleguide']);
-  gulp.watch(options.styleguide.source + '**/*', ['styleguide']);
+  gulp.watch(options.styleguide.builder + '/kss-assets/kss.scss', ['styleguide-sass']);
+  gulp.watch([options.styleguide.source + '**/*', options.styleguide.builder + 'kss-assets/kss.css'], ['styleguide']);
   gulp.watch(options.styleguide.destination + '*.html').on('change', browserSync.reload);
 });
 
 // when running `gulp build` for a static build
-gulp.task('build', ['sass', 'styleguide']);
+gulp.task('build', ['sass', 'styleguide-sass', 'styleguide']);
 
 // when running `gulp` to build, watch and re-build
 gulp.task('default', ['build', 'serve']);
