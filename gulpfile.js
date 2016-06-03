@@ -11,11 +11,6 @@ var options = {
   autoprefixer: {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
   },
-  sass: {
-    onError: browserSync.notify,
-    errLogToConsole: true,
-    outputStyle: 'expanded'
-  },
   styleguide: {
     source: './sass/',
     title: 'Living Styleguide',
@@ -31,9 +26,10 @@ var stylesheets = [
   './node_modules/bootstrap-sass/assets/stylesheets'
 ];
 
-options.sass.includePaths = stylesheets;
-
-console.log(options.sass);
+options.sass = {
+  errLogToConsole: true,
+  includePaths: stylesheets
+};
 
 // converts sass into final stylesheet file
 gulp.task('sass', function () {
@@ -58,8 +54,8 @@ gulp.task('styleguide-sass', function () {
     .src(options.styleguide.builder + 'kss-assets/kss.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(options.sass).on('error', sass.logError))
-    .pipe(sourcemaps.write())
     .pipe(autoprefixer(options.autoprefixer))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(options.styleguide.builder  + 'kss-assets'))
     .pipe(browserSync.stream());
 });
