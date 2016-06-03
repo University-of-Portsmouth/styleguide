@@ -1,11 +1,34 @@
 // Logo
 //
-// Logo stuff yoooo
+// Logos and different variations
 //
 // Markup: logo.html
 //
-// .smaller  - A little bit smaller now.
+// .white - White variant
+// .black - Black variant
 //
 // Styleguide: logo
 
-.logo {}
+.logo {
+  height: 100px;
+  width: 300px;
+
+  background: center no-repeat;
+
+  background-image: url('../kss-assets/logo/uop-logo.png'); // fallback to png
+  background-image: url('../kss-assets/logo/uop-logo.svg'), none;
+
+  &.white {
+    background-image: url('../kss-assets/logo/uop-logo--white.png'); // fallback to png
+    background-image: url('../kss-assets/logo/uop-logo--white.svg'), none;
+  }
+
+  .kss-modifier__example &.white {
+    background-color: black;
+  }
+
+  &.black {
+    background-image: url('../kss-assets/logo/uop-logo--black.png'); // fallback to png
+    background-image: url('../kss-assets/logo/uop-logo--black.svg'), none;
+  }
+}
