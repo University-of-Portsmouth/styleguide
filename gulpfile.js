@@ -12,7 +12,7 @@ var options = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
   },
   styleguide: {
-    source: './sass/',
+    source: './source/',
     title: 'Living Styleguide',
     homepage: 'README.md',
     destination: './styleguide/',

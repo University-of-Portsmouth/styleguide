@@ -14,31 +14,39 @@ To get started please select a component from the sidebar.
 
 ## How to contribute
 
-The sass folder contains all the elements of the styleguide. Do not edit the other files or folders - these are used to generate this styleguide.
+The `source/` folder contains all the elements of the styleguide. Avoid editing the other files or folders - these are used to generate this styleguide.
 
-The sass has the following structure:
+The project has the following structure:
 
 ```
-styleguide/
-├── sass/
+source/
+├── components/
 │   ├── component1/
 │   │   └── component1.scss
 │   │   └── component1.html
-│   ├── component2/
-│   │   └── component2.scss
-│   │   └── component2.html
-│   ├── main.scss
+│   └── component2/
+│       └── component2.scss
+│       └── component2.html
+├── core/
+│   ├── component1/
+│   │   └── component1.scss
+│   │   └── component1.html
+│   └── component2/
+│       └── component2.scss
+│       └── component2.html
+├── _variables.scss
+├── main.scss
 ```
 
 The ```main.scss``` file imports all the components. For example:
 
 ```
-@import "component1/component1";
+@import "components/button/button";
 ```
 
-Each component is stored in its own separate folder containing the scss and and an html example. 
+Each component is stored in its own separate folder containing the scss and and an html example.
 
-The styleguide is generated from comments at the top of the scss file. 
+The styleguide is generated from comments at the top of the scss file.
 
 ```
 // Button

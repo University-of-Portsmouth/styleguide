@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "lint": "scss-lint sass/",
+    "lint": "scss-lint source/",
     "build": "gulp build",
     "start": "gulp"
   },
