@@ -8,7 +8,7 @@ script:
 - npm run build
 branches:
  only:
-   - mastergit
+   - master
 deploy:
   provider: s3
   access_key_id: AKIAJBFLHTL5DRRZ6SOQ
