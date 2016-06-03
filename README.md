@@ -10,6 +10,8 @@ One problem the University of Portsmouth has found is the lack of consistency ac
 
 This is also the reason why the styleguide is built on [Bootstrap](https://github.com/twbs/bootstrap) as this is used extensively across the University services already
 
+Be sure to [read more about living styleguides](https://24ways.org/2011/front-end-style-guides/).
+
 ## Usage
 
 Instructions of usage of this styleguide can be found at http://port.whealmedia.com.

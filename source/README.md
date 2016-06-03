@@ -1,7 +1,5 @@
 # Overview
 
-Welcome to the University of Portsmouth living styleguide. You can read more about living styleguides and pattern libraries [here](https://speakerdeck.com/thoughtmerchant/unifying-agile-and-ux-with-live-style-guides) and [here](https://24ways.org/2011/front-end-style-guides/).
-
 Many services within the University are currently using [Bootstrap](https://github.com/twbs/bootstrap) and therefore this styleguide is built on top of it.
 
 This styleguide has been generated with [KSS](https://github.com/kss-node/kss-node) and is automatically built using [Travis](http://travisci.org) on commit to the master branch. You can view its associated GitHub repository [here](https://github.com/University-of-Portsmouth/styleguide).
@@ -35,12 +33,12 @@ source/
 │       └── component2.scss
 │       └── component2.html
 ├── _variables.scss
-├── main.scss
+└── main.scss
 ```
 
-The ```main.scss``` file imports all the components. For example:
+The `main.scss` file imports all the components. For example:
 
-```
+```scss
 @import "components/button/button";
 ```
 
@@ -48,7 +46,7 @@ Each component is stored in its own separate folder containing the scss and and 
 
 The styleguide is generated from comments at the top of the scss file.
 
-```
+```scss
 // Button
 //
 // Your standard button suitable for clicking.
@@ -69,4 +67,4 @@ The styleguide is generated from comments at the top of the scss file.
 
 The example above is a basic button component. The first line is the component name followed by a description. Next, two modifier are specified followed by the name of an example markup file (*for convention, this file name should be identical to the scss file name*). Finally, the components name and location in the styleguide is specified.
 
-Extensive KSS documentation is available [here](https://github.com/kss-node/kss/blob/spec/SPEC.md).
+To learn more [refer to the extensive KSS documentation](https://github.com/kss-node/kss/blob/spec/SPEC.md).
