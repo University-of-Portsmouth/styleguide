@@ -159,6 +159,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   margin: 0;
   background: #fff;
 
+  .kss-modifier__example .logo.white {
+    background-color: black;
+  }
+
   .kss-header {
     padding: 20px;
 

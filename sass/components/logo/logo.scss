@@ -23,10 +23,6 @@
     background-image: url('../kss-assets/logo/uop-logo--white.svg'), none;
   }
 
-  .kss-modifier__example &.white {
-    background-color: black;
-  }
-
   &.black {
     background-image: url('../kss-assets/logo/uop-logo--black.png'); // fallback to png
     background-image: url('../kss-assets/logo/uop-logo--black.svg'), none;

@@ -12,6 +12,7 @@ var options = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
   },
   sass: {
+    onError: browserSync.notify,
     errLogToConsole: true,
     outputStyle: 'expanded'
   },
@@ -25,14 +26,23 @@ var options = {
   }
 };
 
+var stylesheets = [
+  options.styleguide.source + '**/*.scss',
+  './node_modules/bootstrap-sass/assets/stylesheets'
+];
+
+options.sass.includePaths = stylesheets;
+
+console.log(options.sass);
+
 // converts sass into final stylesheet file
 gulp.task('sass', function () {
   return gulp
-    .src(options.styleguide.source + '**/*.scss')
+    .src(options.styleguide.source + 'main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(options.sass).on('error', sass.logError))
-    .pipe(sourcemaps.write())
     .pipe(autoprefixer(options.autoprefixer))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(options.styleguide.destination + 'css'))
     .pipe(browserSync.stream());
 });
