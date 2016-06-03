@@ -136,6 +136,8 @@
         width: 80%;
         margin-left: 20%;
         padding: 0 20px 0 30px; } }
+  #kss-node .kss-logo {
+    margin-top: 1em; }
   #kss-node .kss-sidebar {
     border-bottom: 1px solid #ddd; }
     @media screen and (min-width: 769px) {

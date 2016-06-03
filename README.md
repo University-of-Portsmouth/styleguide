@@ -1,4 +1,4 @@
-# University of Portsmouth Styleguide
+# University of Portsmouth Living Styleguide
 
 This styleguide is for use in University of Portsmouth services. It can be found living at http://port.whealmedia.com and automatically updates when this repo changes.
 
@@ -38,3 +38,13 @@ In accessing this repository, you agree that you may only download the content f
 non-commercial use. The material on these web pages should not be used, copied, stored or transmitted outside the
 University without the prior written consent of the University or in accordance with the Copyright, Designs and Patents
 Act 1988.
+
+## Linting
+
+SCSS-Lint is carried out automatically on a Pull Request via Hound. To test linting locally the following must be done:
+
+1. Install Ruby 1.9.3+ and Sass 3.4.20+
+2. Install SCSS-Lint `gem install scss_lint`
+3. Run linting script `npm run lint`
+
+_Consider using a SCSS-Lint plugin in your editor/IDE_
