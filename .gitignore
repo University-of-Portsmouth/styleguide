@@ -1,6 +1,8 @@
 # generated files
 styleguide
 .sass-cache
+builder/kss-assets/kss.css
+builder/kss-assets/kss.css.map
 
 # node
 node_modules/
