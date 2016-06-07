@@ -35,7 +35,7 @@
               <ul class="kss-nav__menu-child">
               {{#each children}}
                 <li class="kss-nav__menu-item">
-                  <a class="kss-nav__menu-link" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
+                  <a class="kss-nav__menu-link" href="section-{{../referenceURI}}.html#{{referenceURI}}">
                     <span class="kss-nav__ref {{#if isGrandChild}}kss-nav__ref-child{{/if}}">{{referenceNumber}}</span
                     ><span class="kss-nav__name">{{header}}</span>
                   </a>
@@ -64,22 +64,22 @@
       the "#if @first" block as seen below.
     }}
     {{#each sections}}
-      <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+      <{{#if @first}}div{{else}}section{{/if}} id="{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
 
         <div class="kss-style">
           <h{{depth}} class="kss-title kss-title--level-{{depth}}">
-            <a class="kss-title__permalink" href="#kssref-{{referenceURI}}">
-              <span class="kss-title__ref">
-                {{referenceNumber}}
+            <a class="kss-title__permalink" href="#{{referenceURI}}">
+              {{header}}
+              <small>
+                Section {{referenceNumber}}
                 <span class="kss-title__permalink-hash">
                   {{#if @root.hasNumericReferences}}
                     #permalink
                   {{else}}
-                    #{{reference}}
+                    #{{referenceURI}}
                   {{/if}}
                 </span>
-              </span>
-              {{header}}
+              </small>
             </a>
           </h{{depth}}>
 
