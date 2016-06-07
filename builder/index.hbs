@@ -141,8 +141,9 @@
         {{/if}}
 
         {{#if sourceFile.name}}
-          <div class="kss-source kss-style">
+          <div class="kss-source {{#unless example}}kss-source--main{{/unless}} kss-style">
             Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
+            <a target="_blank" href="https://github.com/University-of-Portsmouth/styleguide/blob/master/source/{{sourceFile.name}}#L{{sourceFile.line}}">View on GitHub</a>
           </div>
         {{/if}}
 

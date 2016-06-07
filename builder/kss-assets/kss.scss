@@ -431,9 +431,27 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   .kss-source {
     padding: .25em 10px;
 
-    text-align: right;
     font-size: .75em;
 
     background: #e5e5e5;
+  }
+
+  .kss-source--main {
+    padding: 0;
+
+    font-size: 1em;
+
+    background: none;
+  }
+
+  .kss-source a::before {
+    content: '•';
+    margin: 0 .5em;
+    color: #C7C7C7;
+  }
+
+  .kss-source a {
+    color: inherit;
+    font-weight: bolder;
   }
 }
