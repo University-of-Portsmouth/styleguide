@@ -1,10 +1,39 @@
 // Type
 //
-// Headings, paragraphs etc.
-//
-// Markup: type.html
+// Typography is one of the important parts of this styleguide,
+// due to a lot of the content being written content.
 //
 // Styleguide: type
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Headings
+//
+// For showing the topic of different sections
+//
+// Markup: type-headings.html
+//
+// Styleguide: type.headings
+
+@import "bootstrap/type";
+
+h1, h2, .h1, .h2, {
+  font-weight: 600;
+  color: darken($brand-primary, 20%);
+}
+
+h3, .h3 {
+  font-weight: 600;
+  color: lighten($grey, 15%);
+}
+
+// Copy
+//
+// This is the main body content
+//
+// Markup: type-paragraphs.html
+//
+// Styleguide: type.paragraphs
+
+p {
+  line-height: 1.5;
+  color: lighten($grey, 10%);
 }
