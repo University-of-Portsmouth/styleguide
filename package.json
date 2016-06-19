@@ -10,8 +10,10 @@
   "engines": {
     "node": ">=5.0.0"
   },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.6",
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
