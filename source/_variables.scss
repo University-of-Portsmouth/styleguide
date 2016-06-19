@@ -1,7 +1,5 @@
 // variables
 
-@import "bootstrap/variables";
-
 $black: #333333;
 $white: #ffffff;
 $grey: #111111;
@@ -19,4 +17,8 @@ $brand-primary: $uop-purple;
 // $brand-danger: #;
 
 $font-size-base: 18px;
-$font-family-sans-serif: Verdana, Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$border-radius-base: 0;
+
+@import "bootstrap/variables";

@@ -1,0 +1,22 @@
+// Buttons
+//
+// Your standard button suitable for clicking.
+//
+// Markup: buttons.html
+//
+// :hover    - Highlights when hovering.
+// :disabled - Dims the button when disabled.
+// .btn-primary  - Indicates button is the primary action.
+// .btn-secondary  - Indicates button is the secondayr action.
+// .btn-success  - Indicates button is the success action.
+// .btn-info  - Indicates button is the info.
+// .btn-warning  - Indicates button is the info.
+// .btn-danger  - Indicates button is the info.
+//
+// Styleguide: buttons
+
+@import "bootstrap/buttons";
+
+.btn {
+  border: 0;
+}

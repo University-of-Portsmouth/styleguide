@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var kss = require('kss');
 var browserSync = require('browser-sync').create();
+var copy = require('gulp-copy');
 
 var options = {
   autoprefixer: {
@@ -43,6 +44,12 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
+// copies images to styleguide
+gulp.task('copy-images', function(){
+  return gulp.src(options.styleguide.source + 'images/**/*')
+    .pipe(copy(options.styleguide.destination, { prefix: 1 }));
+});
+
 // generates the styleguide
 gulp.task('styleguide', function() {
   return kss(options.styleguide);
@@ -66,13 +73,14 @@ gulp.task('serve', function() {
 
   // watch files and build/reload where needed
   gulp.watch(options.styleguide.source + '**/*.scss', ['sass', 'styleguide']);
+  gulp.watch(options.styleguide.source + 'images/**/*', ['copy-images']);
   gulp.watch(options.styleguide.builder + '/kss-assets/kss.scss', ['styleguide-sass']);
   gulp.watch([options.styleguide.source + '**/*', options.styleguide.builder + 'kss-assets/kss.css'], ['styleguide']);
   gulp.watch(options.styleguide.destination + '*.html').on('change', browserSync.reload);
 });
 
 // when running `gulp build` for a static build
-gulp.task('build', ['sass', 'styleguide-sass', 'styleguide']);
+gulp.task('build', ['sass', 'styleguide-sass', 'styleguide', 'copy-images']);
 
 // when running `gulp` to build, watch and re-build
 gulp.task('default', ['build', 'serve']);

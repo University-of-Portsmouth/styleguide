@@ -61,44 +61,56 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   margin: 0;
   background: #fff;
 
-  .kss-modifier__example .logo.white {
-    background-color: black;
+  .kss-modifier__example .logo {
+    width: 300px;
+    height: 100px;
   }
 
-  .kss-header {
-    padding: 20px;
+  .kss-modifier__example .logo-white {
+    background-color: $brand-primary;
+  }
 
-    color: white;
+  #brand {
+    .color {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
 
-    background: $brand-primary;
-
-    background-position: 1em center;
-    background-repeat: no-repeat;
-    background-size: 25% auto;
-    background-image: url('logo/uop-logo--white.png');
-    background-image: url('logo/uop-logo--white.svg'), none;
-
-    @media screen and (min-width: 769px) {
-      padding: 40px 20px;
-      background-size: 15% auto;
+    .kss-markup {
+      display: none;
     }
   }
 
-  .kss-header h1 {
-    color: inherit;
+  .kss-header {
+    color: white;
+
+    background-color: $brand-primary;
+    overflow: hidden; /* clearfix */
   }
 
-  .kss-doc-title {
-    margin: 0;
-    padding-left: 30%;
-
+  .kss-header .logo,
+  .kss-header .kss-doc-title {
+    float: left;
+    padding: 2em 0;
     line-height: 1em;
     font-size: 1em;
+  }
+
+  .kss-header .logo {
+    width: 20%;
+    padding: 3.75em 0;
+  }
+
+  .kss-header .kss-doc-title {
+    display: inline-block;
+    margin: 0;
+    margin-left: 1em;
+
+    color: inherit;
     font-weight: 500;
 
     @media screen and (min-width: 769px) {
-      padding-left: 21.5%;
-
       text-align: initial;
       font-size: 1.5em;
     }
@@ -318,3 +330,5 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     font-weight: bolder;
   }
 }
+
+@import 'prism.css';
