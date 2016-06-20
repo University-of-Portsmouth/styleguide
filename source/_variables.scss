@@ -7,14 +7,15 @@ $gray: $grey; // alternate spelling
 $red: #ff0000;
 $green: #00ff00;
 
-$uop-purple: #422183; // used across uni services
+$uop-purple: #59379e; // used across uni services
 
+//Remember to update the colours page of the stylesheet if you update these colours
 $brand-primary: $uop-purple;
-// $brand-secondary: #;
-// $brand-success: #;
-// $brand-info: #;
-// $brand-warning: #;
-// $brand-danger: #;
+$brand-secondary: darken($uop-purple, 15%);
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
 
 $font-size-base: 18px;
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
