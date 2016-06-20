@@ -118,10 +118,8 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   .kss-header {
     overflow: hidden; // clearfix
     color: white;
-    width: 80%;
-    margin-left: 20%;
-
     background-color: $brand-primary;
+    display: none;
   }
 
   .kss-header .logo,
@@ -132,15 +130,17 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     font-size: 1em;
   }
 
-  .kss-header .logo {
-    width: 20%;
-    padding: 3.75em 0;
-  }
-
   .kss-sidebar .logo {
     background-color: darken($brand-primary, 5%);
     width: 100%;
     height: 120px;
+    background-size: 50%;
+  }
+
+  .kss-header {
+    @media screen and (min-width: 769px) {
+      display: block;
+    }
   }
 
   .kss-header .kss-doc-title {
@@ -154,6 +154,9 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     @media screen and (min-width: 769px) {
       text-align: initial;
       font-size: 1.5em;
+      width: 80%;
+      margin-left: 20%;
+      padding-left: 1em;
     }
   }
 
@@ -166,6 +169,13 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
       float: left;
       margin-right: -100%;
       box-sizing: border-box;
+
+      .logo {
+        background-color: darken($brand-primary, 5%);
+        width: 100%;
+        height: 120px;
+        background-size: 85%;
+      }
     }
   }
 
