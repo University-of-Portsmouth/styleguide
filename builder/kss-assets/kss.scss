@@ -61,13 +61,21 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   margin: 0;
   background: #fff;
 
-  .kss-modifier__example .logo {
-    width: 300px;
-    height: 100px;
+  .kss-modifier__example {
+    .logo {
+      width: 300px;
+      height: 100px;
+    }
+
+    .logo-square, .logo-square-white, .logo-square-black {
+      width: 120px;
+    }
   }
 
-  .kss-modifier__example .logo-white {
-    background-color: $brand-primary;
+  .kss-modifier__example {
+    .logo-white, .logo-square-white {
+      background-color: $brand-primary;
+    }
   }
 
   #brand {
