@@ -61,32 +61,64 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   margin: 0;
   background: #fff;
 
-  .kss-modifier__example .logo {
-    width: 300px;
-    height: 100px;
+  .kss-modifier-example {
+    @import "example";
   }
 
-  .kss-modifier__example .logo-white {
-    background-color: $brand-primary;
+  #colours {
+    .kss-source {
+      display: none;
+    }
+  }
+
+  .colors {
+    display: table;
+  }
+
+  .color {
+    width: 120px;
+    height: 120px;
+    display: table-cell;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+
+    &.primary {
+      background-color: $brand-primary;
+    }
+
+    &.secondary {
+      background-color: $brand-secondary;
+    }
+
+    &.success {
+      background-color: $brand-success;
+    }
+
+    &.info {
+      background-color: $brand-info;
+    }
+
+    &.warning {
+      background-color: $brand-warning;
+    }
+
+    &.danger {
+      background-color: $brand-danger;
+    }
   }
 
   #brand {
-    .color {
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-    }
-
     .kss-markup {
       display: none;
     }
   }
 
   .kss-header {
+    overflow: hidden; // clearfix
     color: white;
 
     background-color: $brand-primary;
-    overflow: hidden; /* clearfix */
   }
 
   .kss-header .logo,

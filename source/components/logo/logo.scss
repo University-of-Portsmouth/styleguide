@@ -1,11 +1,14 @@
 // Logo
 //
-// Logos and different variations
+// Logos and different variations - full details of the University logo can be found [here](http://www.port.ac.uk/departments/services/marketingandcommunications/development/downloads/filetodownload,190042,en.pdf)
 //
 // Markup: logo.html
 //
 // .logo-white - White variant
 // .logo-black - Black variant
+// .logo-square - Colour square variant
+// .logo-square-white - White square variant
+// .logo-square-black - Black square variant
 //
 // Styleguide: logo
 
@@ -25,4 +28,19 @@
 .logo-black {
   background-image: url("/images/logo/uop-logo-black.png"); // fallback to png
   background-image: url("/images/logo/uop-logo-black.svg"), none;
+}
+
+.logo-square {
+  background-image: url("/images/logo/uop-square-logo.png"); // fallback to png
+  background-image: url("/images/logo/uop-square-logo.svg"), none;
+}
+
+.logo-square-white {
+  background-image: url("/images/logo/uop-square-logo-white.png"); // fallback to png
+  background-image: url("/images/logo/uop-square-logo-white.svg"), none;
+}
+
+.logo-square-black {
+  background-image: url("/images/logo/uop-square-logo-black.png"); // fallback to png
+  background-image: url("/images/logo/uop-square-logo-black.svg"), none;
 }
