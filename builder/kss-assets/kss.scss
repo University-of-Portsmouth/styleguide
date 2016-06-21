@@ -61,6 +61,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   margin: 0;
   background: #fff;
 
+  * {
+    box-sizing: border-box;
+  }
+
   @import "example";
 
   .kss-modifier-example {
