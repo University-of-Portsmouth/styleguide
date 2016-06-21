@@ -19,6 +19,7 @@
 .btn {
   border: 0;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:disabled {
     cursor: no-drop;
@@ -37,7 +38,7 @@
   }
 
   &.btn-secondary {
-    background-color: $white;
+    background-color: inherit;
     border: solid 2px $brand-primary;
     color: $brand-primary;
     padding: 4px 10px;

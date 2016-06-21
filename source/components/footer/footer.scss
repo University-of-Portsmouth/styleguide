@@ -1,0 +1,78 @@
+// Footer
+//
+// The footer
+//
+// Markup: footer.html
+//
+// Styleguide: footer
+
+@import "bootstrap/grid";
+
+footer {
+  width: 100%;
+  background-color: $black;
+  padding: 24px;
+
+  .container-fluid {
+    position: relative;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 260px;
+    height: 80px;
+    background-size: 100%;
+    display: block;
+  }
+
+  p {
+    color: $white;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .accessibility {
+    margin-top: 40px;
+  }
+
+  .btn.btn-secondary {
+    color: $white;
+    border-color: $white;
+    border-width: 1px;
+
+    &:hover,
+    &:active {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  .size-container {
+    margin-bottom: 20px;
+
+    .btn {
+      width: 36px;
+    }
+
+    .small {
+      margin-left: 10px;
+      font-size: 12px;
+      height: 36px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .large {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .accessibility {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
