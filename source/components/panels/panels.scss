@@ -19,3 +19,41 @@
 // .panel-danger - Panel Danger
 //
 // Styleguide: panel.basic
+
+// News Panel
+//
+// A news panel
+//
+// Markup: panels-news.html
+//
+//
+// Styleguide: panel.news
+
+@import "bootstrap/media";
+
+.media {
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  border-bottom: solid $panel-primary-border 1px;
+  padding-bottom: 15px;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .media-left {
+    width: 35%;
+
+    img {
+      width: 100%;
+      border-radius: $border-radius-base;
+    }
+  }
+
+  .media-body p {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+}

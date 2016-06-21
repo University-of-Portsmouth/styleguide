@@ -15,13 +15,25 @@
 
 @import "bootstrap/type";
 
-h1, h2, .h1, .h2, {
+h1,
+h2,
+.h1,
+.h2 {
   font-weight: 600;
   color: darken($brand-primary, 20%);
+  line-height: 1.5;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-weight: 600;
+  line-height: 1.5;
+  color: lighten($grey, 15%);
+}
+
+h4,
+.h4 {
+  line-height: 1.5;
   color: lighten($grey, 15%);
 }
 
