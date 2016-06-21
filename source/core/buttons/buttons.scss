@@ -6,7 +6,7 @@
 //
 // :disabled - Dims the button when disabled.
 // .btn-primary  - Indicates button is the primary action.
-// .btn-secondary  - Indicates button is the secondayr action.
+// .btn-secondary  - Indicates button is the secondary action.
 // .btn-success  - Indicates button is the success action.
 // .btn-info  - Indicates button is the info.
 // .btn-warning  - Indicates button is the info.
@@ -35,16 +35,20 @@
     }
   }
 
-  &.btn-secondary{
-    background-color: $brand-secondary;
-    color: #fff;
+  &.btn-secondary {
+    background-color: $white;
+    border: solid 2px $brand-primary;
+    color: $brand-primary;
+    padding: 4px 10px;
 
     &:hover {
-      background-color: darken($brand-secondary, 7.5%);
+      background-color: $brand-primary;
+      color: $white;
     }
 
     &:active {
-      background-color: darken($brand-secondary, 12%);
+      background-color: darken($brand-primary, 7.5%);
+      color: $white;
     }
   }
 }
