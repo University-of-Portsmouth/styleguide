@@ -38,6 +38,12 @@
   border-bottom: solid $panel-primary-border 1px;
   padding-bottom: 15px;
 
+  &:hover {
+    h4 {
+      text-decoration: underline;
+    }
+  }
+
   &:last-child {
     border-bottom: 0;
     padding-bottom: 0;
@@ -52,8 +58,24 @@
     }
   }
 
-  .media-body p {
+  .media-date {
     font-style: italic;
     margin-bottom: 0;
+    color: lighten($black, 20%);
+  }
+}
+
+// Events Panel
+//
+// An events panel
+//
+// Markup: panel-events.html
+//
+//
+// Styleguide: panel.events
+
+.media {
+  .media-location {
+    margin-top: 20px;
   }
 }
