@@ -1,0 +1,32 @@
+// Navigation Bar
+//
+// Navigation bar
+//
+// Markup: nav.html
+//
+// Styleguide: navigation bar
+
+@import "bootstrap/navbar";
+
+.navbar {
+  background-color: $brand-secondary;
+  border: 0;
+
+  .navbar-brand {
+    width: 8em;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .container-fluid > .navbar-header {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    > .container-fluid .navbar-brand {
+      margin-left: 0;
+    }
+  }
+}

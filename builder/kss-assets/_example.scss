@@ -1,15 +1,17 @@
-.logo {
-  width: 300px;
-  height: 100px;
-}
+#logo {
+  .logo {
+    width: 300px;
+    height: 100px;
+  }
 
-.logo-square,
-.logo-square-white,
-.logo-square-black {
-  width: 120px;
-}
+  .logo-square,
+  .logo-square-white,
+  .logo-square-black {
+    width: 120px;
+  }
 
-.logo-white,
-.logo-square-white {
-  background-color: $brand-primary;
+  .logo-white,
+  .logo-square-white {
+    background-color: $brand-primary;
+  }
 }
