@@ -12,9 +12,10 @@
 .navbar {
   background-color: $brand-secondary;
   border: 0;
+  margin-bottom: 0;
 
   .navbar-brand {
-    width: 8em;
+    width: 200px;
 
     &:hover {
       opacity: .8;
