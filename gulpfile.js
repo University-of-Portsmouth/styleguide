@@ -50,6 +50,13 @@ gulp.task('copy-images', function(){
     .pipe(copy(options.styleguide.destination, { prefix: 1 }));
 });
 
+// copies fonts to styleguide
+gulp.task('copy-fonts', function(){
+  return gulp.src(options.styleguide.source + 'fonts/**/*')
+      .pipe(copy(options.styleguide.destination, { prefix: 1 }));
+});
+
+
 // generates the styleguide
 gulp.task('styleguide', function() {
   return kss(options.styleguide);
@@ -80,7 +87,7 @@ gulp.task('serve', function() {
 });
 
 // when running `gulp build` for a static build
-gulp.task('build', ['sass', 'styleguide-sass', 'styleguide', 'copy-images']);
+gulp.task('build', ['sass', 'styleguide-sass', 'styleguide', 'copy-images', 'copy-fonts']);
 
 // when running `gulp` to build, watch and re-build
 gulp.task('default', ['build', 'serve']);

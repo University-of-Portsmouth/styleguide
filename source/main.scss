@@ -7,7 +7,7 @@
 // reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
-// @import "bootstrap/glyphicons";
+@import "bootstrap/glyphicons";
 
 // core CSS
 // @import "bootstrap/scaffolding";
@@ -23,11 +23,11 @@
 @import "components/panels/panels";
 @import "components/footer/footer";
 @import "components/jumbotron/jumbotron";
+@import "components/search/search";
 
 // @import "bootstrap/component-animations";
 // @import "bootstrap/dropdowns";
 // @import "bootstrap/button-groups";
-// @import "bootstrap/input-groups";
 // @import "bootstrap/navs";
 // @import "bootstrap/navbar";
 // @import "bootstrap/breadcrumbs";
