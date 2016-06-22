@@ -27,10 +27,11 @@
   }
 
   &.panel-secondary {
-    border: solid 1px darken($brand-light, 5%);
+    border: solid 1px darken($brand-light, 10%);
 
    .panel-heading {
-     background-color: darken($brand-light, 5%);
+     background-color: $brand-light;
+     border-bottom: solid 1px darken($brand-light, 10%);
    }
  }
 }
