@@ -1,0 +1,38 @@
+// Icons
+//
+// This is the icons used on the MyPort homepage.
+//
+// Markup: icons.html
+//
+// Styleguide: icons
+
+.icons {
+  .icon {
+    text-decoration: none;
+    color: $black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: $border-radius-base;
+
+    &:hover {
+      box-shadow: 0 0 12px 0 $dropshadow;
+    }
+  }
+
+  h6 {
+    text-align: center;
+    font-size: $font-size-h5;
+  }
+
+  .icon-image {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 60px;
+    background-color: $brand-primary;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
