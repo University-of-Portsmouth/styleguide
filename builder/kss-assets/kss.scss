@@ -71,17 +71,11 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     padding-bottom: 35px;
   }
 
-  .colors {
-    display: table;
-  }
-
   .color {
-    width: 120px;
-    height: 120px;
-    display: table-cell;
     color: #fff;
     text-align: center;
-    vertical-align: middle;
+    line-height: 120px;
+    height: 120px;
 
     &.primary {
       background-color: $brand-primary;
@@ -89,6 +83,11 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
     &.secondary {
       background-color: $brand-secondary;
+    }
+
+    &.light {
+      background-color: $brand-light;
+      color: $black;
     }
 
     &.success {
@@ -105,6 +104,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
     &.danger {
       background-color: $brand-danger;
+    }
+
+    &.black {
+      background-color: $black;
     }
   }
 
@@ -189,7 +192,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   }
 
   .kss-sidebar {
-    background: rgba(0,0,0,0.05);
+    background: rgba($brand-primary, .05);
 
     @media screen and (min-width: 769px) {
       position: fixed;

@@ -2,13 +2,15 @@
 //
 // These should be the only colours used:
 //
-// <div class="colors">
-// <div class="color primary">#59379E</div>
-// <div class="color secondary">#4E308B</div>
-// <div class="color success">#5CB85C</div>
-// <div class="color info">#5BC0DE</div>
-// <div class="color warning">#f0AD4E</div>
-// <div class="color danger">#D9534F</div>
+// <div class="colors row">
+// <div class="color primary col-md-3">#59379E</div>
+// <div class="color secondary col-md-3">#4E308B</div>
+// <div class="color light col-md-3">#F6F4F9</div>
+// <div class="color success col-md-3">#5CB85C</div>
+// <div class="color info col-md-3">#5BC0DE</div>
+// <div class="color warning col-md-3">#f0AD4E</div>
+// <div class="color danger col-md-3">#D9534F</div>
+// <div class="color black col-md-3">#333333</div>
 // </div>
 //
 // Styleguide: colours
