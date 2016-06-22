@@ -7,3 +7,9 @@
 // Styleguide: jumbotron
 
 @import "bootstrap/jumbotron";
+
+.jumbotron {
+  p {
+    margin-bottom: 40px;
+  }
+}
