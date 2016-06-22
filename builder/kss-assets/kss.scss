@@ -166,6 +166,11 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
     padding: 0;
     background: #fff;
 
+    .kss-nav {
+      padding-top: 120px;
+    }
+
+
     .kss-main,
     .kss-sidebar {
       float: left;
@@ -174,9 +179,11 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
       .styleguide-logo {
         background-color: darken($brand-primary, 5%);
-        width: 100%;
+        width: 20%;
+        position: fixed;
         height: 120px;
         background-size: 85%;
+        z-index: 99;
       }
     }
   }
