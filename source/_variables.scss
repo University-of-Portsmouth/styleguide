@@ -38,4 +38,9 @@ $font-size-h1: floor(($font-size-base * 2.6));
 $font-size-h2: floor(($font-size-base * 2));
 $font-size-h3: ceil(($font-size-base * 1.5));
 
+// Jumbotron Variables
+$jumbotron-heading-font-size: $font-size-h1;
+$jumbotron-font-size: $font-size-base;
+$jumbotron-heading-color: darken($brand-primary, 20%);
+
 @import "bootstrap/variables";
