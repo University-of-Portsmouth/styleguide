@@ -9,6 +9,8 @@
 @import "bootstrap/jumbotron";
 
 .jumbotron {
+  box-shadow: 0 0 7px 0 $dropshadow;
+
   p {
     margin-bottom: 40px;
   }
