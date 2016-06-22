@@ -49,3 +49,18 @@ p {
   line-height: 1.5;
   color: lighten($grey, 10%);
 }
+
+// Page Heading
+//
+// This is the page heading
+//
+// Markup: type-page-heading.html
+//
+// Styleguide: type.page-heading
+
+.page-header {
+  small {
+    display: block;
+    line-height: 1.3;
+  }
+}
