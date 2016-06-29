@@ -30,6 +30,8 @@ Please raise a GitHub issue for this repository.
 
 ## Copyright and license
 
+### Bootstrap
+
 Bootstrap is licensed under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 
 All rights, including copyright, in the code and documentation (including, but not limited to, the University logo, and
@@ -40,6 +42,10 @@ In accessing this repository, you agree that you may only download the content f
 non-commercial use. The material on these web pages should not be used, copied, stored or transmitted outside the
 University without the prior written consent of the University or in accordance with the Copyright, Designs and Patents
 Act 1988.
+
+### Icons
+
+Icons licensed from [IcoMoon's Essential icon pack](https://icomoon.io/#preview-essential) and not to be used elsewhere
 
 ## Linting
 

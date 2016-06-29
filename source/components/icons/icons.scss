@@ -8,33 +8,95 @@
 
 .icons {
   margin-bottom: 30px;
+}
 
-  .icon {
-    text-decoration: none;
-    color: $black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    padding: 10px;
-    border-radius: $border-radius-base;
+.icon {
+  text-decoration: none;
+  color: $black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  padding: 10px;
+  border-radius: $border-radius-base;
+}
 
-    &:hover {
-      box-shadow: 0 0 12px 0 $dropshadow;
-    }
-  }
+.icon:hover {
+  text-decoration: none;
+}
 
-  h6 {
-    text-align: center;
-    font-size: $font-size-h5;
-  }
+.icon-text {
+  display: block;
+  margin: .5em 0;
 
-  .icon-image {
-    width: 120px;
-    height: 120px;
-    display: block;
-    border-radius: 60px;
-    border: solid 5px $brand-primary;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  text-align: center;
+  font-size: $font-size-h5;
+  font-weight: 600;
+}
+
+.icon-image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-size: 50% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $brand-primary;
+  border-radius: 50%;
+
+  transition: background-color .1s;
+}
+
+.icon:hover .icon-image {
+  background-color: lighten($brand-primary, 5%);
+}
+
+.icon--money .icon-image {
+  background-image: url('/images/icons/piggy-bank.svg');
+}
+
+.icon--university-admin .icon-image {
+  background-image: url('/images/icons/stack.svg');
+}
+
+.icon--international .icon-image {
+  background-image: url('/images/icons/earth.svg');
+}
+
+.icon--library .icon-image {
+  background-image: url('/images/icons/books.svg');
+}
+
+.icon--it-printing .icon-image {
+  background-image: url('/images/icons/display.svg');
+}
+
+.icon--learning-resources .icon-image {
+  background-image: url('/images/icons/files-empty.svg');
+}
+
+.icon--health-wellbeing .icon-image {
+  background-image: url('/images/icons/aid-kit2.svg');
+}
+
+.icon--living-in-portsmouth .icon-image {
+  background-image: url('/images/icons/home4.svg');
+}
+
+.icon--careers-employability .icon-image {
+  background-image: url('/images/icons/briefcase.svg');
+}
+
+.icon--sports-recreation .icon-image {
+  background-image: url('/images/icons/soccer.svg');
+}
+
+.icon--union .icon-image {
+  background-image: url('/images/icons/union.png');
+}
+
+.icon--getting-around .icon-image {
+  background-image: url('/images/icons/bike.svg');
 }
