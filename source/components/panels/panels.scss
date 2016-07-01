@@ -81,13 +81,14 @@
   }
 
   .media-heading {
-    font-size: 20px;
+    font-size: 1em;
+    line-height: 1.25em;
   }
 
   .media-date {
     font-style: italic;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: .85em;
     color: lighten($black, 20%);
   }
 }
@@ -104,6 +105,6 @@
 .media {
   .media-location {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: .85em;
   }
 }
