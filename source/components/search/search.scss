@@ -9,6 +9,11 @@
 @import "bootstrap/input-groups";
 
 .search-box {
+  .form-control,
+  .btn {
+    height: 55px;
+  }
+
   .btn {
     border: solid 1px $brand-primary;
   }

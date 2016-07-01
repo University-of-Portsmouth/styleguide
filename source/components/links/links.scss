@@ -1,0 +1,45 @@
+// Links
+//
+// The main links at the top of the page
+//
+// Markup: links.html
+//
+// .link--timetable - Timetable version
+// .link--assessments - Assessments version
+// .link--moodle - Moodle version
+// .link--google-mail - Google Mail version
+// .link--google-calendar - Google Calendar version
+// .link--google-drive - Google Drive version
+// .link--google-keep - Google Keep version
+//
+// Styleguide: links
+
+.links {
+  @media (max-width: $screen-sm-max) {
+    padding-top: .5em;
+  }
+}
+
+.link {
+  text-align: left;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.link-icon {
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: .5em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link--timetable .link-icon { background-image: url('/images/icons/timetable.png'); }
+.link--assessments .link-icon { background-image: url('/images/icons/assessments.png'); }
+.link--moodle .link-icon { background-image: url('/images/icons/moodle.png'); }
+.link--google-mail .link-icon { background-image: url('/images/icons/google-mail.png'); }
+.link--google-calendar .link-icon { background-image: url('/images/icons/google-calendar.png'); }
+.link--google-drive .link-icon { background-image: url('/images/icons/google-drive.png'); }
+.link--google-keep .link-icon { background-image: url('/images/icons/google-keep.png'); }
