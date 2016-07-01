@@ -85,7 +85,6 @@ gulp.task('scripts', function(){
     .pipe(browserSync.reload({ stream: true }));
 });
 
-
 // copies images to styleguide
 gulp.task('copy-images', function(){
   return gulp.src(options.styleguide.source + 'images/**/*')
@@ -97,7 +96,6 @@ gulp.task('copy-fonts', function(){
   return gulp.src(options.styleguide.source + 'fonts/**/*')
       .pipe(copy(options.styleguide.destination, { prefix: 1 }));
 });
-
 
 // generates the styleguide
 gulp.task('styleguide', function() {
@@ -122,7 +120,7 @@ gulp.task('serve', function() {
 
   // watch files and build/reload where needed
   gulp.watch(options.styleguide.source + '**/*.scss', ['sass', 'styleguide']);
-  gulp.watch(scripts, ['js']);
+  gulp.watch(scripts, ['scripts']);
   gulp.watch(options.styleguide.source + 'images/**/*', ['copy-images']);
   gulp.watch(options.styleguide.builder + '/kss-assets/kss.scss', ['styleguide-sass']);
   gulp.watch([options.styleguide.source + '**/*', options.styleguide.builder + 'kss-assets/kss.css'], ['styleguide']);
