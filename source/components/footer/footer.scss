@@ -9,71 +9,43 @@
 @import "bootstrap/grid";
 
 footer {
-  width: 100%;
   background-color: $black;
   padding: 24px;
 
-  .container-fluid {
-    position: relative;
+  .logo, .copyright {
+    max-width: 260px;
   }
 
   .logo {
-    width: 100%;
-    max-width: 260px;
-    height: 80px;
-    background-size: 100%;
     display: block;
+    width: 100%;
+    height: 80px;
+
+    background-size: 100%;
   }
 
-  p {
-    color: $white;
-    margin-bottom: 0;
-    margin-top: 20px;
+  .copyright {
+    max-width: 260px;
+    display: block;
+    margin: 0;
+
+    font-size: .85em;
+    text-align: center;
+    color: darken($white, 50%);
   }
 
-  .accessibility {
-    margin-top: 40px;
+  .links {
+    @media (min-width: $screen-md-min) {
+      float: right;
+    }
+    padding: 1.5em 0;
   }
 
-  .btn.btn-secondary {
-    color: $white;
-    border-color: $white;
-    border-width: 1px;
-    text-transform: uppercase;
-
-    &:hover,
-    &:active {
-      background-color: $white;
-      color: $black;
-    }
+  .link {
+    color: white;
   }
 
-  .size-container {
-    margin-bottom: 20px;
-
-    .btn {
-      width: 36px;
-    }
-
-    .small {
-      margin-left: 10px;
-      font-size: 12px;
-      height: 36px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .large {
-      font-size: 18px;
-      font-weight: 600;
-    }
-  }
-
-  @media (min-width: $screen-sm-min) {
-    .accessibility {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+  .link:hover {
+    color: darken($white, 15%);
   }
 }
