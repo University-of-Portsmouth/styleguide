@@ -68,6 +68,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
   @import "example";
 
   .kss-modifier-example {
+    overflow: auto;
     padding-bottom: 35px;
   }
 
