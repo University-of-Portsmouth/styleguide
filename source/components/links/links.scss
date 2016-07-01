@@ -29,6 +29,10 @@
   font-size: 20px;
 }
 
+.links--first .link {
+  margin-bottom: 14px;
+}
+
 .link-icon {
   width: 32px;
   height: 32px;
@@ -39,6 +43,8 @@
   background-repeat: no-repeat;
 }
 
+.link--details .link-icon { background-image: url('/images/icons/details.png'); }
+.link--course .link-icon { background-image: url('/images/icons/course.png'); }
 .link--timetable .link-icon { background-image: url('/images/icons/timetable.png'); }
 .link--assessments .link-icon { background-image: url('/images/icons/assessments.png'); }
 .link--moodle .link-icon { background-image: url('/images/icons/moodle.png'); }
