@@ -4,8 +4,11 @@
 //
 // Markup: links.html
 //
+// .link--details - Details version
+// .link--course - Course version
 // .link--timetable - Timetable version
 // .link--assessments - Assessments version
+// .link--uop - University of Portsmouth version
 // .link--moodle - Moodle version
 // .link--google-mail - Google Mail version
 // .link--google-calendar - Google Calendar version
@@ -29,10 +32,6 @@
   font-size: 20px;
 }
 
-.links--first .link {
-  margin-bottom: 14px;
-}
-
 .link-icon {
   width: 32px;
   height: 32px;
@@ -47,6 +46,7 @@
 .link--course .link-icon { background-image: url('/images/icons/course.png'); }
 .link--timetable .link-icon { background-image: url('/images/icons/timetable.png'); }
 .link--assessments .link-icon { background-image: url('/images/icons/assessments.png'); }
+.link--uop .link-icon { background-image: url('/images/icons/uop.png'); }
 .link--moodle .link-icon { background-image: url('/images/icons/moodle.png'); }
 .link--google-mail .link-icon { background-image: url('/images/icons/google-mail.png'); }
 .link--google-calendar .link-icon { background-image: url('/images/icons/google-calendar.png'); }
