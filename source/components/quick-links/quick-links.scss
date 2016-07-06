@@ -1,0 +1,33 @@
+// Links
+//
+// The quick links at the top of the page
+//
+// Markup: quick-links.html
+//
+// Styleguide: quick-links
+
+.quick-links {
+  padding: 1em .5em;
+  margin-bottom: 1em;
+  background: desaturate(lighten($brand-primary, 50%), 20%);
+
+  border-radius: $border-radius-base;
+}
+
+.quick-links ul {
+  margin: 0;
+}
+
+.quick-link {
+  margin-bottom: .25em;
+  list-style: none;
+  line-height: 1.5em;
+
+  font-weight: 500;
+  font-size: 1.15em;
+  // color: $white;
+}
+
+.quick-link a {
+  // color: inherit;
+}
