@@ -9,7 +9,7 @@
 .quick-links {
   padding: 1em .5em;
   margin-bottom: 1em;
-  background: desaturate(lighten($brand-primary, 50%), 20%);
+  background: $brand-light;
 
   border-radius: $border-radius-base;
 }
