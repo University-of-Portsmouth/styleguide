@@ -40,6 +40,7 @@
   @media (min-width: $screen-xs-min) {
     font-size: $font-size-h6;
   }
+
   @media (min-width: $screen-sm-min) {
     font-size: $font-size-h5;
   }
@@ -52,10 +53,8 @@
   width: 64px;
   height: 64px;
 
+  background: no-repeat center $brand-primary;
   background-size: 50% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $brand-primary;
   border-radius: 50%;
 
   transition: background-color .1s;
@@ -76,49 +75,49 @@
 }
 
 .icon--money .icon-image {
-  background-image: url('/images/icons/piggy-bank.svg');
+  background-image: url("/images/icons/piggy-bank.svg");
 }
 
 .icon--university-admin .icon-image {
-  background-image: url('/images/icons/stack.svg');
+  background-image: url("/images/icons/stack.svg");
 }
 
 .icon--international .icon-image {
-  background-image: url('/images/icons/earth.svg');
+  background-image: url("/images/icons/earth.svg");
 }
 
 .icon--library .icon-image {
-  background-image: url('/images/icons/books.svg');
+  background-image: url("/images/icons/books.svg");
 }
 
 .icon--it-printing .icon-image {
-  background-image: url('/images/icons/display.svg');
+  background-image: url("/images/icons/display.svg");
 }
 
 .icon--learning-resources .icon-image {
-  background-image: url('/images/icons/files-empty.svg');
+  background-image: url("/images/icons/files-empty.svg");
 }
 
 .icon--health-wellbeing .icon-image {
-  background-image: url('/images/icons/aid-kit2.svg');
+  background-image: url("/images/icons/aid-kit2.svg");
 }
 
 .icon--living-in-portsmouth .icon-image {
-  background-image: url('/images/icons/home4.svg');
+  background-image: url("/images/icons/home4.svg");
 }
 
 .icon--careers-employability .icon-image {
-  background-image: url('/images/icons/briefcase.svg');
+  background-image: url("/images/icons/briefcase.svg");
 }
 
 .icon--sports-recreation .icon-image {
-  background-image: url('/images/icons/soccer.svg');
+  background-image: url("/images/icons/soccer.svg");
 }
 
 .icon--union .icon-image {
-  background-image: url('/images/icons/union.png');
+  background-image: url("/images/icons/union.png");
 }
 
 .icon--getting-around .icon-image {
-  background-image: url('/images/icons/bike.svg');
+  background-image: url("/images/icons/bike.svg");
 }

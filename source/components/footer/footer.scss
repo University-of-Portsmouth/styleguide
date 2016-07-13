@@ -12,7 +12,8 @@ footer {
   background-color: $black;
   padding: 24px;
 
-  .logo, .copyright {
+  .logo,
+  .copyright {
     max-width: 260px;
   }
 
@@ -35,14 +36,15 @@ footer {
   }
 
   .links {
+    padding: 1.5em 0;
+
     @media (min-width: $screen-md-min) {
       float: right;
     }
-    padding: 1.5em 0;
   }
 
   .link {
-    color: white;
+    color: $white;
   }
 
   .link:hover {
