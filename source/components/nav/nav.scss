@@ -41,7 +41,7 @@
     box-shadow: none;
   }
 
-  .navbar-nav a {
+  .navbar-nav > li > a {
     color: $white;
     text-decoration: none;
     line-height: 52px;
