@@ -11,6 +11,7 @@
 .jumbotron {
   padding-bottom: 30px;
   padding-top: 30px;
+  border-bottom: solid 1px darken($brand-light, 10%);
 
   h1 {
     margin-top: 0;
