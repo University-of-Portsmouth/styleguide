@@ -6,9 +6,19 @@ This styleguide has been generated with [KSS](https://github.com/kss-node/kss-no
 
 ## How to use
 
-To get started please select a component from the sidebar.
+To get started, please select a component from the sidebar.
 
-*TBC*
+### Step 1 - Clone Repository
+
+The first step is to clone this styleguide repository into your project folder. Alternatively, you could add the repository as a sub-module or a dependency.
+
+### Step 2 - Create main.scss Files
+
+Create a new main.scss file and import all the required components. An example [here](https://github.com/University-of-Portsmouth/myport/blob/master/source/main.scss).
+
+### Step 3 - Compile SCSS
+
+Using gulp, generate the css file.
 
 ## How to contribute
 
