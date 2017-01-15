@@ -1,13 +1,22 @@
 // Alert
 //
+// Provide an alert to the user.
+//
 // Markup: alert.html
+//
+// .alert-myport  - Specifically for use on the MyPort homepage.
+// .alert-primary  - Indicates alert is primary.
+// .alert-success  - Indicates alert is success.
+// .alert-info  - Indicates alert is info.
+// .alert-warning  - Indicates alert is warning.
+// .alert-danger  - Indicates alert is danger.
 //
 // Styleguide: alert
 
 @import "bootstrap/alerts";
 
 .alert {
-  border-bottom: solid 1px darken($brand-light, 10%);
+  border: 0;
   margin-top: 0;
   line-height: 1.25em;
   color: darken($brand-primary, 20%);
@@ -20,6 +29,18 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  &.alert-myport {
+    border-bottom: solid 1px darken($brand-light, 10%);
+  }
+
+  &.alert-primary {
+    background-color: $uop-purple;
+
+    a {
+      color: $white;
     }
   }
 }
