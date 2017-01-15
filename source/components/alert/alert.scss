@@ -1,0 +1,23 @@
+// Alert
+//
+// Markup: alert.html
+//
+// Styleguide: alert
+
+@import "bootstrap/alerts";
+
+.alert {
+  border-bottom: solid 1px darken($brand-light, 10%);
+  margin-top: 0;
+  line-height: 1.25em;
+  color: darken($brand-primary, 20%);
+
+  a {
+    color: $uop-purple;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
