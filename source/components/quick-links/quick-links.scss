@@ -27,7 +27,7 @@
 }
 
 .quick-link {
-  margin-bottom: .25em;
+  margin-bottom: .9em;
   list-style: none;
   line-height: 1.5em;
 
@@ -36,5 +36,9 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
