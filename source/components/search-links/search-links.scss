@@ -7,8 +7,7 @@
 // Styleguide: search-links
 
 .search-links {
-  padding: 1em .5em;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .search-link {
@@ -25,5 +24,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-link {
+    display: block;
+    line-height: 2;
   }
 }
