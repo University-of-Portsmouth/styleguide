@@ -1,0 +1,29 @@
+// Search Links
+//
+// The links under the search bar
+//
+// Markup: search-links.html
+//
+// Styleguide: search-links
+
+.search-links {
+  padding: 1em .5em;
+  margin-bottom: 1em;
+}
+
+.search-link {
+  list-style: none;
+  display: inline-block;
+  margin-right: .9em;
+
+  font-weight: 500;
+  font-size: .9em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
