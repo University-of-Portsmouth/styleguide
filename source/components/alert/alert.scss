@@ -43,4 +43,14 @@
       color: $white;
     }
   }
+
+  &.alert-info {
+    a {
+      color: $white;
+    }
+  }
+
+  &.alert-centre {
+    text-align: center;
+  }
 }
